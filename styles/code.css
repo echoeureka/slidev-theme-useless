@@ -4,6 +4,7 @@
 
 :root {
   --prism-font-family: var(--slidev-code-font-family);
+  @apply font-mono;
 }
 
 html:not(.dark) {
@@ -64,11 +65,10 @@ pre[class*='language-'] {
   @apply font-light py-0.5 rounded;
 }
 
-
 :not(pre) > code:before,
 :not(pre) > code:after {
   content: '`';
-  opacity: 0.50;
+  opacity: 0.5;
 }
 
 :not(pre) > code:before {
